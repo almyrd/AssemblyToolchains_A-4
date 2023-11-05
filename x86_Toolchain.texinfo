@@ -1,0 +1,133 @@
+\input x86_Toolchain   @c -*-x86_Toolchain-*-
+
+@c <FILE_HEADER>
+@setfilename x86_Toolchain.info
+@settitle x86_Toolchain
+@c </FILE_HEADER>
+
+@setchapternewpage odd
+
+@c <SUMMARY_DESCRIP>
+@ifinfo
+This manual is for x86_Toolchain (version @value{VERSION}, @value{UPDATED}),
+which automates some of the functionality of GDB, GEF and QEMU.
+
+GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+Copyright @copyright{} 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+@quotation
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+@end quotation
+@end ifinfo
+@c </SUMMARY_DESCRIP>
+
+@c <TITLE_PAGE>
+@titlepage
+@c Increasing Font Size and Centre-Justifying "x86 TOOLCHAIN" as the Page Title
+@sp 10	
+@center @titlefont{x86 TOOLCHAIN}
+
+@c Creating Copyright Page
+@page
+@vskip 0pt plus 1filll
+Copyright @copyright{} 2007 Free Software Foundation, Inc.
+@end titlepage
+@c </TITLE_PAGE>
+
+@c <TOP_NODE>
+@c [NODE_NAME] , [NEXT] , [PREVIOUS] , [UP]
+@node TITLEPAGE, SYNOPSIS, PREVIOUS, UP
+
+@c Master Menu for Info File
+@menu
+* SYNOPSIS::Overview of the x86 Toolchain
+* CONFIGURATION::How to Configure x86 Toolchain
+* DESCRIPTION::Details Pertaining to the x86 Toolchain
+* OPTIONS::Flags, Syntax and Specifications
+* EXIT STATUS::
+* RETURN VALUE::
+* ERRORS::
+* ENVIRONMENT::Path, Variables and Setup
+* FILES::
+* VERSION::
+* NOTES::
+* BUGS::
+@end menu
+
+@c </TOP_NODE>
+
+
+@c <DOC_BODY>
+@c [NODE_NAME] , [NEXT] , [dir1] , [dir2]
+@c SYNOPSIS
+@node SYNOPSIS, CONFIGURATION, n/a, TOP
+@chapter SYNOPSIS
+@c CONFIGURATION
+@node CONFIGURATION, DESCRIPTION, PREVIOUS, TOP
+@chapter CONFIGURATION
+@c DESCRIPTION
+@node DESCRIPTION, OPTIONS, PREVIOUS, TOP
+@chapter DESCRIPTION
+@c OPTIONS
+@node OPTIONS, EXIT STATUS, PREVIOUS, TOP
+@chapter OPTIONS
+@c EXIT STATUS
+@node EXIT STATUS, RETURN VALUE, PREVIOUS, TOP
+@chapter EXIT STATUS
+@c RETURN VALUE
+@node RETURN VALUE, ERRORS, PREVIOUS, TOP
+@chapter RETURN VALUE
+@c ERRORS
+@node ERRORS, ENVIRONMENT, PREVIOUS, TOP
+@chapter ERRORS
+@c ENVIRONMENT
+@node ENVIRONMENT, FILES, PREVIOUS, TOP
+@chapter ENVIRONMENT
+@c FILES
+@node FILES, VERSION, PREVIOUS, TOP
+@chapter FILES
+@c VERSION
+@node VERSION, NOTES, PREVIOUS, TOP
+@chapter VERSION
+@c NOTES
+@node NOTES, BUGS, PREVIOUS, TOP
+@chapter NOTES
+@c BUGS
+@node BUGS,n/a, PREVIOUS, n/a
+@chapter BUGS
+
+@c </DOC_BODY>
+                       
+Created by Lubos Kuzma
+Information Systems Security Program, School for Advanced Digital Technology
+Southern Alberta Institute of Technology
+# August 2022
+
+@dircategory x86_Toolchain documentation system
+@direntry
+* sample: (sample)Invoking sample.
+@end direntry
+
+NAME
+SYNOPSIS
+CONFIGURATION
+DESCRIPTION
+OPTIONS
+EXIT STATUS
+RETURN VALUE
+ERRORS
+ENVIRONMENT
+FILES
+VERSION
+NOTES
+BUGS
+
+1.0
+
+CONFORMING TO
+
+   GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+NOTES
+BUGS

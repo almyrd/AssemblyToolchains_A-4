@@ -1,0 +1,95 @@
+.TH X86_TOOLCHAIN.SH 1 25-10-2023
+
+.SH NAME
+
+x86_toolchain.sh \- x86-64 based compiler Toolchain
+
+.SH SYNOPSIS
+
+.B x86_toolchain.sh
+[\fB\-v\fR]
+[\fB\-g\fR]
+[\fB\-b\fR]
+[\fB\-r\fR]
+[\fB\-q\fR]
+[\fB\-32\fR]
+<\fIassembly_filename\fR>
+[\fB\-o\fR]
+[\fB\-\-output\fR <\fIoutput_filename\fR>]
+
+.SH DESCRIPTION
+.ad l 
+.nh
+This toolchain was built for applying modality and ease of use to compiling and debugging NASM based assembly code.
+It uses \fBnasm\fR to compile and \fBld\fR to link with options to debug and run inside \fBgdb\fR.
+This version was modified to run in x86-64 bit architecture by default.
+
+The goal of this project is to create a tool that simplifies the process of compilation and debugging by reducing the number of steps and instructions required. 
+
+Instructions for installation can be located at: \fIhttps://github.com/LubosKuzma/ITSC204/blob/main/scripts/README.md
+
+.SH OPTIONS
+
+.TP
+.BR \-h ", " \-\-help                
+	Show this help page
+
+.TP
+.BR \-v ", " \-\-verbose                
+	Show more information about steps performed and the set arguments.
+.TP
+.BR \-g ", " \-\-gdb                    
+	Run gdb command on executable.
+.TP
+.BR \-b ", " "\-\-break " <\fIbreakpoint\fR>    
+	Add breakpoint after running \fBgdb\fR.
+.TP
+.BR \-r ", " \-\-run                    
+	Run program in \fBgdb\fR automatically. Same as run command inside \fBgdb\fR environment.
+.TP
+.BR \-q ", " \-\-qemu                   
+	Run executable in \fBqemu\fR emulator. This will execute the program.
+.TP
+.BR \-32 ", " \-\-x86\-32              
+	Compile for 32-bit (x86-32) system.
+.TP
+.BR \-o ", " "\-\-output " <\fIfilename\fR>      
+	Desired name for new output file.
+	
+.SS GDB / GEF specific commands:
+.TP
+After compilation and executing the file using \fBGDB\fR, the user is able to control the debugger as normal.
+	
+.SH PREREQUISITES
+
+.SS x86-64 Bit architecture:
+.BR gcc ", " gdb ", " gef ", " qemu
+
+.SS Arm architecture:
+.BR arm\-gcc ", "multiarch ", " gdb ", " gef ", " qemu
+
+.SS Add toolchain script to PATH:
+.TP
+.ad l
+\fBFor bash:\fR
+.TP
+"echo \(aqexport PATH=$PATH:<\fIfilename\fR>\(aq >>/.bashrc"
+.TP 
+\fBFor zsh:\fR
+.TP
+"echo \(aqexport PATH=$PATH:<\fIfilename\fR>\(aq >>/.zsh"
+
+.SH BUGS
+
+No known bugs. 
+.sp 0
+If you find a bug, please report it at \fIhttps://github.com/LubosKuzma
+
+.SH SEE ALSO
+
+\fBgdb\fR(1), \fBnasm\fR(1), \fBld\fR(1)
+
+.SH AUTHOR
+.TP
+Lubos Kuzma \fIhttps://www.linkedin.com/in/lubos-kuzma-0719a586
+ISS program, SADT, SAIT. August 2022
